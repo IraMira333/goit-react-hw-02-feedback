@@ -1,7 +1,7 @@
 import React from 'react';
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Statistics from './Statistics/Statistics';
-import Section from './Section/Section';
+import FeedbackOptions from './FeedbackOptions';
+import Statistics from './Statistics';
+import Section from './Section';
 
 export class App extends React.Component {
   state = {
@@ -31,6 +31,8 @@ export class App extends React.Component {
     return (
       <div
         style={{
+          display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           fontSize: 40,
