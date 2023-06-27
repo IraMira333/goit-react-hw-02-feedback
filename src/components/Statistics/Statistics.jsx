@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import css from './Statistics.css';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <div className="box">
-    <p className="text">Good: {good}</p>
-    <p className="text">Neutral: {neutral}</p>
-    <p className="text">Bad: {bad}</p>
-    <p className="text">Total: {total}</p>
-    <p className="text">Positive feedback: {positivePercentage} %</p>
+  <div className={css.box}>
+    <p className={css.text}>Good: {good}</p>
+    <p className={css.text}>Neutral: {neutral}</p>
+    <p className={css.text}>Bad: {bad}</p>
+    <p className={css.text}>Total: {total}</p>
+    <p className={css.text}>Positive feedback: {positivePercentage} %</p>
   </div>
 );
 
